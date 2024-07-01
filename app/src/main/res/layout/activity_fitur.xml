@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bone"
+    tools:context=".FiturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#950E79FB"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBaseline_toBaselineOf="parent">
+
+        <RelativeLayout
+            android:layout_width="408dp"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="80dp"
+                android:layout_height="200dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="150dp"
+                android:text="FITUR MILK PREDICT"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="#CB1C0AAE"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="285dp"
+                        android:layout_height="402dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="pH : Fitur ini menentukan pH susu, yang berada pada kisaran 3 hingga 9,5. [float64]. \n \n
+temperature : Fitur ini menentukan suhu susu, dan kisarannya adalah dari 34'C hingga 90'C.[int64]. \n \n
+taste : Fitur ini mendefinisikan rasa susu dan mengambil nilai yang mungkin: 1 (baik) atau 0 (buruk).[int64]. \n \n
+odor : Fitur ini mendefinisikan bau susu dan mengambil nilai yang mungkin: 1 (baik) atau 0 (buruk).[int64]. \n \n
+fat : Fitur ini mendefinisikan kandungan lemak susu dan mengambil nilai yang mungkin: 1 (Tinggi) atau 0 (Rendah).[int64]. \n \n
+turbidity : Fitur ini menentukan kekeruhan susu dan mengambil nilai yang mungkin: 1 (Tinggi) atau 0 (Rendah).[int64]. \n \n
+colour : Fitur ini menentukan warna susu, yang berkisar antara 240 hingga 255.[int64]. \n \n
+grade : Ini adalah target dan mengambil nilai: kualitas_rendah, kualitas_sedang, atau kualitas_tinggi.[object]"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
